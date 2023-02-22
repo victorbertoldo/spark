@@ -1,0 +1,1 @@
+mvn dependency:copy-dependencies -DoutputDirectory=.venv\Lib\site-packages\pyspark\jars

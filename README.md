@@ -29,4 +29,3 @@ spark = SparkSession \
 ```
 > GetOrCreate significa q se já houver uma sessão spark ativa, os parametros dela serão sobrescritos para as novas configurações, inves de iniciar um novo cluster job.
 
-"# spark" 

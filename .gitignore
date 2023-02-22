@@ -1,0 +1,5 @@
+*.parquet
+*.csv
+*.json
+*.log
+metastore_db/

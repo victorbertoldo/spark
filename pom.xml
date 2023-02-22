@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.vitaospark</groupId>
+  <artifactId>vitaospark-maven</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <name>vitaospark-maven</name>
+
+  <dependencies>
+    <!-- https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk -->
+    <dependency>
+        <groupId>com.amazonaws</groupId>
+        <artifactId>aws-java-sdk</artifactId>
+        <version>1.12.254</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk-core -->
+    <dependency>
+        <groupId>com.amazonaws</groupId>
+        <artifactId>aws-java-sdk-core</artifactId>
+        <version>1.12.254</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk-dynamodb -->
+    <dependency>
+        <groupId>com.amazonaws</groupId>
+        <artifactId>aws-java-sdk-dynamodb</artifactId>
+        <version>1.12.254</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk-kms -->
+    <dependency>
+        <groupId>com.amazonaws</groupId>
+        <artifactId>aws-java-sdk-kms</artifactId>
+        <version>1.12.254</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk-s3 -->
+    <dependency>
+        <groupId>com.amazonaws</groupId>
+        <artifactId>aws-java-sdk-s3</artifactId>
+        <version>1.12.254</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/software.amazon.awssdk/bundle -->
+    <dependency>
+        <groupId>software.amazon.awssdk</groupId>
+        <artifactId>bundle</artifactId>
+        <version>2.17.220</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.apache.hadoop/hadoop-aws -->
+    <dependency>
+        <groupId>org.apache.hadoop</groupId>
+        <artifactId>hadoop-aws</artifactId>
+        <version>3.2.2</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.apache.iceberg/iceberg-hive-runtime -->
+    <dependency>
+        <groupId>org.apache.iceberg</groupId>
+        <artifactId>iceberg-hive-runtime</artifactId>
+        <version>0.13.0</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.apache.iceberg/iceberg-spark-runtime-3.2 -->
+    <dependency>
+        <groupId>org.apache.iceberg</groupId>
+        <artifactId>iceberg-spark-runtime-3.2_2.12</artifactId>
+        <version>0.13.0</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.projectnessie/nessie-spark-extensions-base -->
+    <dependency>
+        <groupId>org.projectnessie</groupId>
+        <artifactId>nessie-spark-extensions-base_2.12</artifactId>
+        <version>0.47.0</version>
+        <scope>runtime</scope>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/software.amazon.awssdk/url-connection-client -->
+    <dependency>
+        <groupId>software.amazon.awssdk</groupId>
+        <artifactId>url-connection-client</artifactId>
+        <version>2.17.220</version>
+        <scope>test</scope>
+    </dependency>   
+  </dependencies>
+
+</project>
