@@ -9,10 +9,11 @@ _Exemplo de uso_:
 ``` python
 from pyspark import SparkContext, SparkConf
 
-configure = SparkConf().setAppName("Teste02").setMaster("spark://LAPTOP-GRNB9S39.localdomain:7077")
+configure = SparkConf().setAppName("Teste02").setMaster("spark://<nomedamaquina>:7077")
 
 sc = SparkContext(conf = configure)
 ```
+> Note que é necessário adicionar o master utilizando a porta de comunicação interna do Spark (7077)
 
 Mas se vamos usar somente o Spark SQL (DataFrames), nós importamos apenas a sessão do Spark, e utilizamos o `builder` para setar as configurações:
 
@@ -22,7 +23,7 @@ from pyspark.sql import SparkSession
 
 spark = SparkSession \
     .builder \
-    .master("spark://LAPTOP-GRNB9S39.localdomain:7077") \
+    .master("spark://<nomedamaquina>:7077") \
     .appName("First Spark SQL code") \
     .enableHiveSupport() \
     .getOrCreate()
